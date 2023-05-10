@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "994689580098",
+    "project_id": "bankme-71af3",
+    "storage_bucket": "bankme-71af3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994689580098:android:f6422fec6a92c259a181db",
+        "android_client_info": {
+          "package_name": "com.example.bank_me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994689580098-761sh075rai3d8miiuctm8vc7lunakfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJDlf_XQqqPka-7pHuiLx3Kszgl0gPlqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994689580098-761sh075rai3d8miiuctm8vc7lunakfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
