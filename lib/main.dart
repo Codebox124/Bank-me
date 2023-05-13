@@ -1,3 +1,4 @@
+import 'package:bank_me/screens/dashboard.dart';
 import 'package:bank_me/screens/onboard_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -35,7 +36,7 @@ class _MyAppState extends State<MyApp> {
             )
           ],
         ),
-        nextScreen: const OnboardScreen(),
+        nextScreen: const Dashboard(),
         splashIconSize: 390,
         splashTransition: SplashTransition.scaleTransition,
         pageTransitionType: PageTransitionType.leftToRight,

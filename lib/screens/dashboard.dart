@@ -1,5 +1,6 @@
 import 'package:bank_me/widgets/Dashboard/balance.dart';
 import 'package:bank_me/widgets/Dashboard/header.dart';
+import 'package:bank_me/widgets/Dashboard/savings_option.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -16,7 +17,7 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser!;
+    // final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
@@ -26,6 +27,7 @@ class _DashboardState extends State<Dashboard> {
            Header(),
            Balance(),
             AddMoney(),
+            SavingsOption()
 
           
           ],
