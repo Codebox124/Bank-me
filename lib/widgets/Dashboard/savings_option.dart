@@ -32,7 +32,9 @@ class _SavingsOptionState extends State<SavingsOption> {
             physics: NeverScrollableScrollPhysics(),
             children: [
               Container(
-                decoration: BoxDecoration(
+                decoration: 
+                
+                BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                     border: Border.all(
                   color: Colors.blue,
@@ -78,7 +80,8 @@ class _SavingsOptionState extends State<SavingsOption> {
                ),
             ],
           ),
-        )
+        ),
+     
       ],
     );
   }

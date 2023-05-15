@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
             )
           ],
         ),
-        nextScreen: const Dashboard(),
+        nextScreen: const OnboardScreen(),
         splashIconSize: 390,
         splashTransition: SplashTransition.scaleTransition,
         pageTransitionType: PageTransitionType.leftToRight,

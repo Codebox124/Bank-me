@@ -21,10 +21,10 @@ class _AddMoneyState extends State<AddMoney> {
                   color: Color.fromARGB(85, 66, 223, 215),
                   borderRadius: BorderRadius.circular(10)),
               child: Padding(
-                padding: const EdgeInsets.all(15),
+                padding: const EdgeInsets.all(10),
                 child: Row(
                   children: [
-                    Image.asset("assets/img/Group.png"),
+                    Image.asset("assets/img/Group.png",width: 40,),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Text("Add money",
@@ -40,10 +40,10 @@ class _AddMoneyState extends State<AddMoney> {
                   color: Color.fromARGB(96, 236, 183, 103),
                   borderRadius: BorderRadius.circular(10)),
               child: Padding(
-                padding: const EdgeInsets.all(15),
+                padding: const EdgeInsets.all(10),
                 child: Row(
                   children: [
-                    Image.asset("assets/img/money (2) 1.png"),
+                    Image.asset("assets/img/money (2) 1.png",width: 40,),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Text(
