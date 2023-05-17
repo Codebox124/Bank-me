@@ -1,8 +1,11 @@
-import 'package:bank_me/widgets/Dashboard/balance.dart';
-import 'package:bank_me/widgets/Dashboard/header.dart';
-import 'package:bank_me/widgets/Dashboard/savings_option.dart';
+import 'package:bank_me/screens/save_screen.dart';
+
 import 'package:flutter/material.dart';
+import '../pages/pages.dart';
 import '../widgets/Dashboard/add_money.dart';
+import '../widgets/Dashboard/balance.dart';
+import '../widgets/Dashboard/header.dart';
+import '../widgets/Dashboard/savings_option.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -13,19 +16,17 @@ class Dashboard extends StatefulWidget {
 
 class _DashboardState extends State<Dashboard> {
   int _currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     // final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       bottomNavigationBar: NavigationBar(
-        
+        labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
         selectedIndex: _currentIndex,
-        onDestinationSelected: (index) {
-          _currentIndex = index;
-        },
         backgroundColor: Colors.white,
         height: 90,
-        destinations: const [
+        destinations: [
           NavigationDestination(
             icon: Icon(Icons.home_filled),
             label: "Home",
@@ -47,10 +48,26 @@ class _DashboardState extends State<Dashboard> {
             label: "Profile",
           )
         ],
+        onDestinationSelected: (index) {
+          setState(() {
+            _currentIndex = index;
+            if (index == 0) {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Dashboard()));
+            } else if (index == 1) {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SaveScreen()));
+            }
+          });
+        },
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 252, 252, 252),
       body: Padding(
-        padding: const EdgeInsets.only(top: 70, left: 20, right: 20),
+        padding: EdgeInsets.only(
+          top: 70,
+          left: 20,
+          right: 20,
+        ),
         child: Column(
           children: [
             Header(),
