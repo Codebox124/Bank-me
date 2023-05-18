@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
+
 import 'package:bank_me/screens/dashboard.dart';
 import 'package:bank_me/screens/get_started_page.dart';
 import 'package:bank_me/screens/sign_up.dart';

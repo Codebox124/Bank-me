@@ -1,4 +1,4 @@
-import 'package:bank_me/screens/save_screen.dart';
+
 import 'package:bank_me/widgets/Dashboard/save.dart';
 import 'package:flutter/material.dart';
 
@@ -35,8 +35,8 @@ class _AddMoneyState extends State<AddMoney> {
                         "assets/img/Group.png",
                         width: 40,
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8.0),
                         child: Text(
                           "Add money",
                           style: TextStyle(fontSize: 15, color: Colors.black54),
@@ -60,8 +60,8 @@ class _AddMoneyState extends State<AddMoney> {
                       "assets/img/money (2) 1.png",
                       width: 40,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 8.0),
                       child: Text(
                         "Withdraw",
                         style: TextStyle(fontSize: 15, color: Colors.black54),

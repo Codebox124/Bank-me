@@ -1,7 +1,5 @@
 import 'package:bank_me/screens/save_screen.dart';
-
 import 'package:flutter/material.dart';
-import '../pages/pages.dart';
 import '../widgets/Dashboard/add_money.dart';
 import '../widgets/Dashboard/balance.dart';
 import '../widgets/Dashboard/header.dart';
@@ -61,8 +59,8 @@ class _DashboardState extends State<Dashboard> {
           });
         },
       ),
-      backgroundColor: Color.fromARGB(255, 252, 252, 252),
-      body: Padding(
+      backgroundColor: const Color.fromARGB(255, 252, 252, 252),
+      body: const Padding(
         padding: EdgeInsets.only(
           top: 70,
           left: 20,

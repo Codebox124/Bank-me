@@ -18,13 +18,13 @@ class _BalanceState extends State<Balance> {
         decoration: BoxDecoration(
             color: Colors.blue.shade700,
             borderRadius: BorderRadius.circular(10)),
-        child: Padding(
-          padding: const EdgeInsets.only(top:50),
+        child: const Padding(
+          padding: EdgeInsets.only(top:50),
           child: Column(
           
             children: [
           Padding(
-            padding: const EdgeInsets.only(bottom:20),
+            padding: EdgeInsets.only(bottom:20),
             child: Text(
               "Total Savings",
               style: TextStyle(
@@ -34,7 +34,7 @@ class _BalanceState extends State<Balance> {
             ),
           ),
           Text(
-            "₦2,000.10",
+            "₦15,000.10",
             style: TextStyle(
                 color: Colors.white,
                 fontSize: 37,
