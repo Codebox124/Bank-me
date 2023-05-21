@@ -34,7 +34,7 @@ class _BalanceState extends State<Balance> {
             ),
           ),
           Text(
-            "₦15,000.10",
+            "₦5,000.10",
             style: TextStyle(
                 color: Colors.white,
                 fontSize: 37,
